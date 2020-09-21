@@ -32,8 +32,8 @@ else
 }
 
 // affichez le choix de l'ordinateur dans le document
-document.write("<p>Choix du joueur : <strong>" + player + "</strong></p>");
 document.write("<p>Choix de l'ordinateur : <strong>" + computer + "</strong></p>");
+document.write("<p>Choix du joueur : <strong>" + player + "</strong></p>");
 
 // Vérifiez si il y a une égalité
 if (computer == player) {
