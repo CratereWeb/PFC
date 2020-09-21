@@ -32,13 +32,12 @@ else
 }
 
 // affichez le choix de l'ordinateur dans le document
+document.write("<p>Choix du joueur : <strong>" + player + "</strong></p>");
 document.write("<p>Choix de l'ordinateur : <strong>" + computer + "</strong></p>");
-
 
 // Vérifiez si il y a une égalité
 if (computer == player) {
     // affichez l'égalité
-    document.write("<p>Choix du joueur : <strong>" + player + "</strong></p>");
 	document.write("<p><strong>Egalité !</strong></p>");
 }
  
@@ -59,14 +58,14 @@ else {
             }
             break;
         // cas choix feuille
-		case 'feuille': if (
-           // si le joueur a choisi pierre
-			player == 'pierre') {
-				document.write("<p><strong>Perdu !</strong></p>");
+		case 'pierre':	if (
+            // si le joueur a choisi feuille
+            player == 'feuille') {
+            	document.write("<p><strong>Gagné !</strong></p>");
             }
            // sinon c'est qu'il a choisi ciseaux
-        				else {
-        		document.write("<p><strong>Gagné !</strong></p>");
+            			else {
+            	document.write("<p><strong>Perdu !</strong></p>");
             }
             break;
         // cas du choix ciseaux
