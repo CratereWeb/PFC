@@ -50,17 +50,6 @@ else {
         case 'pierre':	if (
             // si le joueur a choisi feuille
             player == 'feuille') {
-            	document.write("<p><strong>Perdu !</strong></p>");
-            }
-           // sinon c'est qu'il a choisi ciseaux
-            			else {
-            	document.write("<p><strong>Gagné !</strong></p>");
-            }
-            break;
-        // cas choix feuille
-		case 'pierre':	if (
-            // si le joueur a choisi feuille
-            player == 'feuille') {
             	document.write("<p><strong>Gagné !</strong></p>");
             }
            // sinon c'est qu'il a choisi ciseaux
@@ -68,7 +57,18 @@ else {
             	document.write("<p><strong>Perdu !</strong></p>");
             }
             break;
-        // cas du choix ciseaux
+        // cas du choix feuille pour l'ordinateur
+		case 'feuille':	if (
+            // si le joueur a choisi pierre
+            player == 'pierre') {
+            	document.write("<p><strong>Perdu !</strong></p>");
+            }
+           // sinon c'est qu'il a choisi ciseaux
+            			else {
+            	document.write("<p><strong>Gagné !</strong></p>");
+            }
+            break;
+        // cas du choix ciseaux pour ordinateur
     	case 'ciseaux' : if (
            // si le joueur a choisi pierre
 			player == 'pierre') {
